@@ -6,6 +6,12 @@ var app = express();
 // Enable CORS for all requests
 app.use(cors());
 
+// Log all requests
+app.use(function (req, res, next) {
+    console.log('Path: ', req.path, ' Query: ', req.query);
+    next();
+  })
+
 // allow serving of static files from the public directory
 app.use(express.static(__dirname + '/public'));
 
