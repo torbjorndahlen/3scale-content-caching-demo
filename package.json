@@ -4,6 +4,7 @@
   "description": "App to test the 3scale content caching policy",
   "main": "application.js",
   "scripts": {
+    "start": "node application.js",
     "test": "test"
   },
   "repository": {
